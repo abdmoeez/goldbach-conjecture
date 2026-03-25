@@ -38,6 +38,35 @@ Output:
 
 ---
 
+## Level 2 — Performance Optimizer
+
+### What it does
+Verifies the conjecture for every even number from 4 
+to 1,000,000 using the Sieve of Eratosthenes.
+
+### Output
+```
+Conjecture holds up to 1,000,000!
+```
+
+### How it works
+- Builds a boolean array of 1,000,001 elements
+- Uses the Sieve to pre-calculate all primes up front
+- Checks every even number using instant array lookups
+- If any even number has no prime pair, conjecture fails
+
+### Why this is faster than Level 1
+Level 1 calculates isPrime from scratch every single time.
+Level 2 pre-builds a cheat sheet of all primes once, then 
+just looks up answers instantly — reducing execution time 
+from minutes to milliseconds.
+
+### Skills demonstrated
+- Sieve of Eratosthenes algorithm
+- Space vs time complexity tradeoff
+- Boolean array management in C++
+
+---
+
 ## Coming Soon
-- Level 2
 - Level 3
