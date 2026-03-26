@@ -1,0 +1,4 @@
+The Prime Pairs For 44 Are : 
+3 + 41 = 44
+7 + 37 = 44
+13 + 31 = 44
