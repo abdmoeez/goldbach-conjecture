@@ -19,7 +19,6 @@ that sum to it.
 ### Example
 ```
 Input: 28
-
 Output:
 5 + 23 = 28
 11 + 17 = 28
@@ -68,5 +67,58 @@ from minutes to milliseconds.
 
 ---
 
+## Level 3 — Goldbach Comet Visualizer
+
+### What it does
+Takes an even number as input, finds all prime pairs 
+and saves them to a results.txt file.
+
+### Example
+```
+Input: 28
+Output in results.txt:
+5 + 23 = 28
+11 + 17 = 28
+```
+
+### How it works
+- Takes an even number input from the user
+- Checks all prime pairs using isPrime function
+- Writes every pair to a results.txt file
+- File can be opened in any text editor
+
+### Skills demonstrated
+- File I/O in C++ using ofstream
+- Writing and saving data to external files
+- Data generation and storage
+
+---
+
+## Level 4 — Multi-Threaded Tester
+
+### What it does
+Verifies the conjecture for every even number up to 
+1,000,000 using two threads running simultaneously.
+
+### Output
+```
+Conjecture holds up to 1,000,000!
+```
+
+### How it works
+- Builds the Sieve of Eratosthenes first
+- Splits the range into two halves
+- Thread 1 checks 4 to 500,000
+- Thread 2 checks 500,002 to 1,000,000
+- Both threads run at the same time on different CPU cores
+- Finishes in half the time compared to Level 2
+
+### Skills demonstrated
+- Multi-threading in C++ using std::thread
+- Parallel computing and splitting workloads
+- Thread synchronization using join()
+
+---
+
 ## Coming Soon
-- Level 3
+- Level 5
